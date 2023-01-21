@@ -414,14 +414,6 @@ header .menu-sp {
   padding-top: 5px;
   text-align: center;
 }
-.access .access-wrap .access-right {
-  width: 400px;
-  height: 400px;
-  background-color: var(--gray1);
-  font-size: 50px;
-  text-align: center;
-  padding-top: 150px;
-}
 
 footer {
   width: 100%;

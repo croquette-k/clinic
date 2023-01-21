@@ -234,11 +234,8 @@
   .access .access-wrap .access-left .access-bottom table tr td {
     padding-right: 15px;
   }
-  .access .access-wrap .access-right {
+  .access .access-wrap iframe {
     margin: 30px 0;
-    width: 331px;
-    height: 210px;
-    padding-top: 60px;
   }
   footer {
     width: 100vw;
