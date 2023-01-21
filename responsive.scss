@@ -1,0 +1,304 @@
+:root {
+    --blue1: #DCF2F2;
+    --blue2: #84C9D9;
+    --blue3: #55B3D9;
+    --yellow1: #FEFCF1;
+    --yellow2: #F2EFDC;
+    --orange1: #F2CDA0;
+    --gray1: #BCBCBC;
+    --gray2: #707070;
+}
+
+
+@media (max-width: 960px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    // ヘッダー
+    header {
+        height: 90px;
+        h1 {
+            a {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+        .openbtn {
+            display: block;
+            z-index: 40;  
+        }
+        .header-list {
+            display: none;
+        }
+        .menu-sp {
+            background-color: var(--blue2);
+            display: block;
+            position: absolute;
+            top: -605px;
+            width: 100%;
+            z-index: 30;
+            text-align: center;
+            padding: 120px 0;
+            color: #fff;
+            transition: all 0.6s;
+            h1 {
+                position: absolute;
+                top: 5px;
+            }
+            li {
+                margin-bottom: 30px;
+            }
+            .reserve-btn {
+                margin-top: 50px;
+                background-color: #fff;
+                color: #707070;
+            }
+        }
+        .menu-sp.active {
+            top:0;
+        }
+
+    }
+
+    // メインビジュアル
+    .mainvisual {
+        height: 520px;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+        .main-left {
+            width: 500px;
+            position: absolute;
+            left: -32px;
+            top: 190px;
+        }
+        .slider {
+            width: 384px;
+            height: 255px;
+            right: -30px;
+            top: 10px;
+        }
+        .slider-item {
+            width: 384px;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+            height: 255px;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        }
+    }
+    // お知らせ
+    .news {
+        margin: 60px 15px;
+        padding: 40px 20px 100px 20px;
+        text-align: center;
+        .news-wrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+            .news-left {
+                .news-btn {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: 1050px;
+                }
+            }
+            .news-right {
+                margin-top: 20px;
+                width: 100%;
+                font-size: 13px;
+                ul {
+                    li {
+                        text-align: left;
+                        p {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    // 診療のご案内
+    .information {
+        padding: 60px 10px;
+        .department {
+            ul {
+                li {
+                    margin: 20px 10px;
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        .covid {
+            margin: 30px auto;
+
+            .covid-left {
+                display: none;
+            }
+            .covid-right {
+                margin: 0 auto;
+                h3 {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    li {
+                        margin: 0 25px;
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 当クリニックについて
+    .about {
+        padding: 0 10px;
+        text-align: center;
+        .back-image {
+            width: 158px;
+            left: auto;
+            right: 10px;
+        }
+        .about-wrap {
+            padding: 30px 20px 60px 20px;
+            .about-left {
+                margin: 0 auto;
+                .doctor-sp {
+                    margin: 0 auto;
+                    display: block;
+                    width: 200px;
+                }
+                p {
+                    text-align: left;
+                }
+                .about-btn {
+                    margin-top: 30px;
+                }
+            }
+            .about-right {
+                display: none;
+            }
+        }
+    }
+    // 院内設備
+    .facilities {
+        padding: 60px 0;
+        h2 {
+            width: 180px;
+            height: 50px;
+            padding: 10px;
+        }
+        ul {
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin-bottom: 40px;
+                width: auto;
+                img {
+                    width: 100px;
+                }
+                h4 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    text-align: left;
+                }
+            }
+        }
+        .facilities-btn {
+            margin-top: 0;
+        }
+    }
+    // アクセス
+    .access {
+        padding-bottom: 60px;
+        span {
+            width: 450px;
+            height: 450px;
+            transform: translate(-50%,30%);
+        }
+        .access-wrap {
+            padding: 0;
+            flex-direction: column;
+            overflow-x: hidden;
+            .access-left {
+                width: 410px;
+                height: 410px;
+                .access-top {
+                    margin-top: 50px;
+                    .access-top-left {
+                        img {
+                            width: 170px;
+                        }
+                    }
+                    .access-top-right {
+                        margin-left: 0px;
+                        margin-right: 10px;
+                        font-size: 10px;
+                        .tel {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .access-bottom {
+                    margin-top: 30px;
+                    table {
+                        tr {
+                            th {
+                                padding-right: 15px;
+                            }
+                            td {
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .access-right {
+                margin: 30px 0;
+                width: 331px;
+                height: 210px;
+                padding-top: 60px;
+            }
+        }
+    }
+    // フッター
+    footer {
+        width: 100vw;
+        flex-direction: column;
+        .footer-logo {
+            a {
+                img {
+                    width: 150px;
+                    margin: 25px 35px;
+                }
+            }
+        }
+        .footer-list {
+            display: none;
+        }
+        #page-top {
+            display: inline-block;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 25px;
+            background-color: var(--blue2);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            z-index: 30;
+        }
+    }
+}

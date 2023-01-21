@@ -1,0 +1,634 @@
+:root {
+    --blue1: #DCF2F2;
+    --blue2: #84C9D9;
+    --blue3: #55B3D9;
+    --yellow1: #FEFCF1;
+    --yellow2: #F2EFDC;
+    --orange1: #F2CDA0;
+    --gray1: #BCBCBC;
+    --gray2: #707070;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #707070;
+    font-family: fot-tsukuardgothic-std,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+a {
+    display: inline-block;
+}
+.btn {
+    line-height: 45px;
+    border-radius: 23px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.reserve-btn {
+    width: 300px;
+    background-color: var(--blue2);
+    color: #fff;
+    font-weight: bold;
+}
+.btn:hover {
+    opacity: 70%;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+// ヘッダー
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    
+    h1 {
+        a {
+            img {
+                margin: 25px 10px 0 25px;
+                width: 15vw;
+            }
+            
+        }
+    }
+    .header-list {
+        padding: 25px 0px;
+        text-align: right;
+
+        ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            li {
+                margin-right: 25px;
+            }
+        }
+        p {
+            margin-right: 100px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 26px;
+            
+
+            i {
+                margin-right: 10px;
+            }
+        }
+
+    }
+    .menu-sp {
+        display: none;
+    }
+    
+}
+
+// メインビジュアル
+.mainvisual {
+    padding: 40px 0;
+
+    .main-left {
+        width: 53%;
+    }
+    #slider {
+        
+    }
+    .slider {
+        width: 56%;
+        height: 37vw;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 20;
+      }
+      /*　背景画像設定　*/
+      
+      .slider-item01 {
+          background:url(./image/clinic.png);
+      }
+      
+      .slider-item02 {
+          background:url(./image/doctormai.png);
+      }
+      
+      .slider-item03 {
+          background:url(./image/ns.png);
+      }
+      
+      .slider-item {
+          width: 56%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+          height:37vw;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+          background-repeat: no-repeat;/*背景画像をリピートしない*/
+          background-position: center;/*背景画像の位置を中央に*/
+          background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+      }
+      
+      /*矢印の設定*/
+      
+      .slick-prev, 
+      .slick-next {
+          position: absolute;
+          z-index: 3;
+          top: 60%;
+          cursor: pointer;/*マウスカーソルを指マークに*/
+          outline: none;/*クリックをしたら出てくる枠線を消す*/
+          border-top: 2px solid #fff;/*矢印の色*/
+          border-right: 2px solid #fff;/*矢印の色*/
+          height: 25px;
+          width: 25px;
+      }
+      
+      .slick-prev {/*戻る矢印の位置と形状*/
+          left:2.5%;
+          transform: rotate(-135deg);
+      }
+      
+      .slick-next {/*次へ矢印の位置と形状*/
+          right:2.5%;
+          transform: rotate(45deg);
+      }
+      
+      /*ドットナビゲーションの設定*/
+      
+      .slick-dots {
+          position: relative;
+          z-index: 3;
+          text-align:center;
+          margin:-50px 0 0 0;/*ドットの位置*/
+      }
+      
+      .slick-dots li {
+          display:inline-block;
+          margin:0 5px;
+      }
+      
+      .slick-dots button {
+          color: transparent;
+          outline: none;
+          width:8px;/*ドットボタンのサイズ*/
+          height:8px;/*ドットボタンのサイズ*/
+          display:block;
+          border-radius:50%;
+          background:#fff;/*ドットボタンの色*/
+      }
+      
+      .slick-dots .slick-active button{
+          background:#333;/*ドットボタンの現在地表示の色*/
+      }
+}
+
+// お知らせ
+.news {
+    margin: 60px 60px;
+    padding: 30px 60px;
+    border-radius: 35px;
+    background-color: var(--yellow1);
+    
+    .news-wrapper {
+        margin: 0 auto;
+        max-width: 1030px;
+        display: flex;
+        justify-content: space-between;
+
+        .news-left {
+            .news-btn {
+                margin-top: 20px;
+                width: 200px;
+                background-color: var(--blue1);
+                color: var(--blue3);
+                i {
+                    margin-left: 40px;
+                }
+            }
+        }
+        .news-right {
+            width: 65%;
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    line-height: 60px;
+                    border-bottom: 1px solid var(--blue3);
+
+                    p {
+                        display: inline-block;
+                        margin-right: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 診療のご案内
+.information {
+    margin: 0 auto;
+    padding: 60px;
+    max-width: 1030px;
+    text-align: center;
+    
+    .department {
+        text-align: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 30px 50px;
+                img {
+                    margin-bottom: 10px;
+                    width: 150px;
+                }
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .covid {
+        margin: 90px 0;
+        display: flex;
+        justify-content: space-between;
+        .covid-left {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        .covid-right {
+            h3 {
+                margin-bottom: 30px;
+            }
+            p {
+                text-align: left;
+            }
+            ul {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                li {
+                    margin: 0 20px;
+                    img {
+                        width: 130px;
+                    }
+                    p {
+                        font-weight: bold;
+                        margin: 10px 0 30px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+// 当クリニックについて
+.about {
+    padding: 0 30px;
+    background-color: var(--yellow2);
+
+    .back-image {
+        width: 230px;
+        position: absolute;
+        left: 130px;
+        z-index: 0;
+    }
+    .about-wrap {
+        margin: 0 auto;
+        padding: 50px 0;
+        max-width: 1030px;
+        display: flex;
+        align-items: center;
+        .about-left {
+            margin-right: 50px;
+            z-index: 10;
+            h2 {
+                margin-bottom: 30px;
+            }
+            .doctor-sp {
+                display: none;
+            }
+            p {
+                margin-top: 20px;
+            }
+            .about-btn {
+                margin-top: 50px;
+                width: 250px;
+                background-color: var(--orange1);
+                color: #fff;
+                i {
+                    margin-left: 50px;
+                }
+            }
+        }
+        .about-right {
+            img {
+                width: 450px;
+            }
+        }
+    }
+}
+// 院内設備
+.facilities {
+    padding-top: 130px;
+    text-align: center;
+    h2 {
+        margin: 0 auto;
+        padding: 25px;
+        width: 305px;
+        height: 87px;
+        background-image: url(image/frame.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+    }
+    ul {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        line-height: 2;
+        li {
+            margin: 0 20px;
+            width: 225px;
+            img {
+                width: 170px;
+                margin-bottom: 15px;
+            }
+            h4 {
+                margin: 0 auto;
+                margin-bottom: 20px;
+                width: 130px;
+                background-color: var(--blue2);
+                color: #fff;
+                font-weight: bold;
+                line-height: 35px;
+                border-radius: 12px;
+            }
+            
+        }
+    }
+    .facilities-btn {
+        margin-top: 50px;
+        width: 215px;
+        background-color: var(--blue1);
+        color: var(--blue3);
+        i {
+            margin-left: 50px;
+        }
+    }
+}
+// アクセス
+.access {
+    span {
+        width: 830px;
+        height: 830px;
+        border-radius: 50%;
+        background-color: var(--blue1);
+        display: inline-block;
+        position: absolute;
+        transform: translate(-50%);
+        z-index: -10;
+    }
+    .access-wrap {
+        margin: 0 auto;
+        padding: 130px 20px;
+        max-width: 1030px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .access-left {
+            padding: 40px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: var(--yellow1);
+
+            .access-top {
+                margin-top: 80px;
+                display: flex;
+                justify-content: space-between;
+
+                .access-top-left {
+                    img {
+                        width: 216px;
+                    }
+                }
+                .access-top-right {
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    .tel {
+                        margin-top: 5px;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .access-bottom {
+                margin-top: 30px;
+                table {
+                    margin: 0 auto;
+                    text-align: center;
+                    border-spacing: 0;
+                    tr {
+                        th {
+                            padding-right: 20px;
+                            padding-bottom: 10px;
+                            border-width: 0 0 1px 0;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+                        td {
+                            padding-right: 20px;
+                            padding-top: 5px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .access-right {
+            width: 400px;
+            height: 400px;
+            background-color: var(--gray1);
+            font-size: 50px;
+            text-align: center;
+            padding-top: 150px;
+        }
+    }
+}
+footer {
+    width: 100%;
+    background-color: var(--blue2);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    .footer-logo {
+        a {
+            img {
+                width: 168px;
+                margin: 30px 10px 30px 40px;
+            }
+        }
+    }
+    .footer-list {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        nav {
+            ul {
+                display: flex;
+                li {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .reserve-btn2 {
+            margin-right: 25px;
+            background-color: #fff;
+            color: var(--gray2);
+            width: 280px;
+        }
+    }
+    #page-top {
+        display: none;
+    }
+}
+/*==================================================
+ハンバーガーメニュー MENUが☓に
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn{
+	/*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+    margin: 20px;
+	position: relative;
+	background: var(--blue2);
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+	border-radius: 5px;
+    display: none;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+  }
+
+.openbtn span:nth-of-type(1),
+.openbtn span:nth-of-type(3) {
+    height: 2px;
+	background: #fff;
+  	width: 62%;
+    left: 9px;
+ }
+
+.openbtn span:nth-of-type(1) {
+	top:13px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:19px;
+	left:8px;
+	font-size:0.6rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:36px;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+// ロード画面
+/* Loading背景画面設定　*/
+#loading {
+    /*fixedで全面に固定*/
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background:var(--blue2);
+      text-align:center;
+      color:#fff;
+    }
+    
+    /* Loading画像中央配置　*/
+    #loading_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    /* Loading アイコンの大きさ設定　*/
+    #loading_logo img {
+      width:260px;
+    }
+    
+    /* fadeUpをするアイコンの動き */
+    .loadUp{
+    animation-name: fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+
+    // フェードアップ
+    .scroll_up {
+        transition: 1s ease-in-out;
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      .scroll_up.on {
+        transform: translateY(0);
+        opacity: 1.0;
+      }

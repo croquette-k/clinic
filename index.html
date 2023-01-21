@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="Ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひつじクリニック</title>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- adobeフォント -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'mjl5ruy',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+      <div id="loading_logo"><img src="image/logo2.png" alt="" class="loadUp"></div>
+    </div>
+    <div id="container">
+    <!-- ヘッダー -->
+    <header>
+      <h1>
+        <a href="#"><img src="image/logo.png" alt="ひつじクリニック"></a>
+      </h1>
+      <div class="header-list">
+        <nav>
+          <ul>
+            <li><a href="#">初診の方へ</a></li>
+            <li><a href="#">診療のご案内</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">アクセス</a></li>
+            <li class="reserve">
+              <a href="#" class="reserve-btn btn">ワクチン接種のご予約はこちら</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="tel"><i class="fas fa-phone-alt"></i>01-2345-6789</p>
+      </div>
+      <div class="openbtn"><span></span><span>Menu</span><span></span></div>
+      <div class="menu-sp">
+        <h1>
+          <a href="#"><img src="image/logo2.png" alt="ひつじクリニック"></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">初診の方へ</a></li>
+            <li><a href="#">診療のご案内</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">アクセス</a></li>
+            <li class="reserve">
+              <a href="#" class="reserve-btn btn">ワクチン接種のご予約はこちら</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="tel"><i class="fas fa-phone-alt"></i>01-2345-6789</p>
+      </div>
+    </header>
+    <!--  -->
+    <main>
+      <!-- メインビジュアル -->
+      <section class="mainvisual">
+        <img src="image/main.png" alt="ともにいきる" class="main-left">
+        <ul class="slider">
+          <li class="slider-item slider-item01"></li>
+          <li class="slider-item slider-item02"></li>
+          <li class="slider-item slider-item03"></li>
+        </ul>
+      </section>
+
+      <!-- お知らせ -->
+      <section class="news">
+        <div class="news-wrapper">
+          <div class="news-left">
+            <h2>お知らせ</h2>
+            <a href="#" class="news-btn btn">お知らせ一覧<i class="fas fa-angle-right"></i></a>
+          </div>
+          <div class="news-right">
+            <ul>
+              <li>
+                <p>2023.01.16</p>
+                <p>2月3日は臨時休診です</p>
+              </li>
+              <li>
+                <p>2022.12.11</p>
+                <p>年末年始の休診日について</p>
+              </li>
+              <li>
+                <p>2022.11.13</p>
+                <p>インフルエンザワクチンについて</p>
+              </li>
+              <li>
+                <p>2022.10.04</p>
+                <p>オミクロン対応ワクチンについて</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 診療のご案内 -->
+      <section class="information">
+        <h2>診療のご案内</h2>
+        <div class="department scroll_up">
+          <ul>
+            <li>
+              <img src="image/ent.png" alt="耳鼻科">
+              <p>耳鼻科</p>
+            </li>
+            <li>
+              <img src="image/throat.png" alt="咽頭科">
+              <p>咽頭科</p>
+            </li>
+            <li>
+              <img src="image/respiratory.png" alt="呼吸器内科">
+              <p>呼吸器内科</p>
+            </li>
+          </ul>
+        </div>
+        <div class="covid">
+          <div class="covid-left">
+            <img src="image/vaccine_picture.png" alt="ワクチン接種">
+          </div>
+          <div class="covid-right scroll_up">
+            <h3>新型コロナウイルスについて</h3>
+            <p>当クリニックでは、新型コロナウイルスのPCR検査、<br>
+              ワクチン接種を行っています。</p>
+            <ul>
+              <li>
+                <img src="image/virus.png" alt="ウイルス">
+                <p>PCR検査</p>
+              </li>
+              <li>
+                <img src="image/vaccine.png" alt="ワクチン">
+                <p>ワクチン接種</p>
+              </li>
+            </ul>
+            <a href="#" class="reserve-btn btn">ワクチン接種のご予約はこちら</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 当クリニックについて -->
+      <section class="about">
+        <img src="image/stethoscope.png" alt="" class="back-image">
+        <div class="about-wrap scroll_up">
+          <div class="about-left">
+            <h2>当クリニックについて</h2>
+            <img src="image/doctor.png" alt="院長の写真" class="doctor-sp">
+            <div class="about-text">
+              <p>ひつじクリニックでは従来の耳鼻咽頭科、呼吸器内科の診療を行うほか、新型コロナウイルスに関するPCR検査・ワクチン接種を行っています。
+              </p>
+              <p>わずかな不安にも寄り添えるよう、丁寧で安心な医療を提供したいと考えています。
+              </p>
+              <p>みなさまのかかりつけ医として愛され、信頼されるクリニックを目指し、スタッフ一同努めて参ります。</p>
+            </div>
+            <a href="#" class="about-btn btn">院長について<i class="fas fa-angle-right"></i></a>
+          </div>
+          <div class="about-right">
+            <img src="image/doctor.png" alt="院長の写真" class="doctor-pc">
+          </div>
+        </div>
+      </section>
+
+      <!-- 院内設備 -->
+      <section class="facilities">
+        <h2>院内設備</h2>
+        <ul>
+          <li class="scroll_up">
+            <img src="image/car.png" alt="駐車場">
+            <h4>駐車場</h4>
+            <p>クリニック前に3台駐車可能な<br>スペースをご用意しています</p>
+          </li>
+          <li  class="scroll_up">
+            <img src="image/wheelchair.png" alt="車いす">
+            <h4>バリアフリー</h4>
+            <p>車いすをご使用されている方も<br>安心してご利用いただけます</p>
+          </li>
+          <li  class="scroll_up">
+            <img src="image/room.png" alt="個室">
+            <h4>個室</h4>
+            <p>院内感染予防のため<br>個室をご用意しています</p>
+          </li>
+        </ul>
+        <a href="#" class="facilities-btn btn">一覧をみる<i class="fas fa-angle-right"></i></a>
+      </section>
+      
+      <!-- アクセス -->
+      <section class="access">
+        <span></span>
+        <div class="access-wrap">
+          <div class="access-left">
+            <div class="access-top">
+              <div class="access-top-left">
+                <img src="image/logo.png" alt="ひつじクリニック">
+              </div>
+              <div class="access-top-right">
+                <p>〒000-0000<br>
+                  大阪市〇〇区〇〇2-4-16                
+                </p>
+                <p class="tel"><i class="fa-solid fa-phone"></i>01-2345-6789</p>
+              </div>
+            </div>
+            <div class="access-bottom">
+              <table>
+                <thead>
+                  <tr>
+                    <th>診療時間</th>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                    <th>日祝</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>9:00-12:00</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>×</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>×</td>
+                </tr>
+                <tr>
+                  <td>16:30-19:30</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>×</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>×</td>
+                  <td>×</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="access-right">
+            google map
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <div class="footer-logo">
+        <a href="#"><img src="image/logo2.png" alt="ひつじクリニック"></a>
+      </div>
+      <div class="footer-list">
+        <nav>
+          <ul>
+            <li><a href="#">初診の方へ</a></li>
+            <li><a href="#">診療のご案内</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">アクセス</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="reserve-btn2 btn">ワクチン接種のご予約はこちら</a>
+      </div>
+      <!-- 上に戻るボタン -->
+      <p id="page-top"><a href="#"><i class="fa-solid fa-angles-up"></i></a></p>
+    </footer>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
